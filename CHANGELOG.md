@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 — 2026-08-18
+
+- Added CI validation for the skill catalog JSON.
+- Added automated changelog structure and semantic-version ordering checks.
+- Added a validation workflow for pull requests and pushes.
+
 ## 0.1.1 — 2026-08-18
 
 - Clarified that SuperSkills owns reusable skill definitions.
