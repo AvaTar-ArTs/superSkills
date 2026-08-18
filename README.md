@@ -12,6 +12,10 @@ SuperSkills defines reusable skills: portable capability contracts, metadata, pr
 
 SuperAgents may generate a runtime projection of this catalog, but the authoritative skill definitions live here.
 
+## Validation
+
+CI checks catalog JSON syntax and enforces changelog structure, dated semantic-version headings, and descending release order.
+
 ## Catalog
 
 The first catalog establishes process and integration primitives:
