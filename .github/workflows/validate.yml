@@ -1,0 +1,21 @@
+name: Validate SuperSkills
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate catalog JSON
+        run: python -m json.tool catalog/skills.json > /dev/null
+      - name: Validate changelog
+        run: python scripts/check_changelog.py
