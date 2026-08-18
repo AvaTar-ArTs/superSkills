@@ -1,14 +1,16 @@
 # SuperSkills
 
-> The canonical reusable skill catalog for the AvaTar-ArTs agent ecosystem.
+> The skill layer for the AvaTar-ArTs agent ecosystem.
 
-SuperSkills contains portable skill contracts, metadata, provenance, risk classification, and composition guidance. It is a capability library—not an execution runtime.
+SuperSkills defines reusable skills: portable capability contracts, metadata, provenance, risk classification, tags, capabilities, and lifecycle status. It is a skill library—not an agent runtime.
 
-## Boundary
+## Relationship
 
-- **SuperSkills** owns reusable skill definitions, source provenance, tags, capabilities, risk, and composition metadata.
-- **SuperAgents** owns agent selection, routing, execution envelopes, approval policy, audit events, and verification.
-- **agent-skills** remains the broader upstream ecosystem for long-form and experimental skills. SuperSkills is the curated, contract-first catalog consumed by SuperAgents.
+- **SuperSkills = skills**: reusable capabilities that agents can invoke or compose.
+- **SuperAgents = agents**: specialized agent identities and the runtime that routes, approves, executes, and verifies them.
+- **agent-skills = broader source ecosystem**: long-form, experimental, and domain-specific skills that can be curated into SuperSkills.
+
+SuperAgents may generate a runtime projection of this catalog, but the authoritative skill definitions live here.
 
 ## Catalog
 
