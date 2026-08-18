@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 2026-08-18
+
+- Clarified that SuperSkills owns reusable skill definitions.
+- Clarified that SuperAgents owns agents and agent runtime behavior.
+- Documented the runtime projection versus authoritative skill catalog boundary.
+
 ## 0.1.0 — 2026-08-18
 
 - Created the canonical SuperSkills catalog repository.
